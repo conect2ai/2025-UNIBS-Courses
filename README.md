@@ -31,7 +31,7 @@ This repository contains all the materials, code, and resources for the special 
   <tr>
     <td style="padding: 15px;">
       <h3>Course 3 – Introduction to Agents with LLMs</h3>
-      <p>This course introduces the fundamental concepts of software agents integrated with large language models (LLMs), focusing on practical implementations.</p>
+      <p>This course introduces the fundamental concepts of agents integrated with large language models (LLMs), focusing on practical implementations.</p>
       <p><a href="./course_agents/README.md"><strong>Access &rarr;</strong></a></p>
     </td>
   </tr>
