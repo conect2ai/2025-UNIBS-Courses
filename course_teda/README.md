@@ -7,11 +7,12 @@ The goal is to present, in a practical and didactic way, the use of the **TEDA**
 
 ```
 .
-├── TEDA.ipynb                 # Main notebook with explanations and code
+├── TEDA_TEDARLS.ipynb         # Main notebook with explanations and code
 ├── teda.py                    # TEDA algorithm implementation
 ├── lead1.0-small.csv          # Energy consumption dataset
 ├── README.md                  # This file
-└── TEDA-RLS is coming
+├── RLSFilter.py               # RLS filter algorithm implementation
+├── PowerWithOutliers.xlsx     # Power dataset with outliers
 ```
 
 ## 📋 Prerequisites
@@ -75,6 +76,41 @@ The dataset used in this course is the `lead1.0-small.csv`, which contains energ
 ## 🧩 TEDA Algorithm
 
 TEDA (Typicality and Eccentricity Data Analytics) is an incremental method for anomaly detection that requires no prior training and is suitable for execution on embedded devices (TinyML).
+
+## 🧩 TEDA-RLS Algorithm
+
+TEDA-RLS (Typicality and Eccentricity Data Analytics with Recursive Least Squares) extends the TEDA framework by integrating it with the **Recursive Least Squares (RLS)** filter.  
+While TEDA is responsible for identifying whether new samples are **typical** or **eccentric** (potential outliers), RLS performs **parameter estimation** in real time.  
+
+By combining both, TEDA-RLS is able not only to detect anomalies but also to **correct the effect of outliers** during online model updates.
+
+### 🔑 How it works
+
+1. TEDA computes the **eccentricity** and **typicality** of the incoming sample.  
+2. If the sample is typical, RLS updates its parameters normally.  
+3. If the sample is eccentric:
+   - The update can be weighted by the **typicality** (reducing its influence), or  
+   - The sample can be discarded to avoid contaminating the model.  
+
+### 📊 Evaluation
+
+- **TEDA part (classification):** evaluated through confusion matrix, precision, recall, and F1-score.  
+- **RLS part (regression):** evaluated through error metrics such as Mean Squared Error (MSE) and Mean Absolute Error (MAE).  
+
+### ⚡ Applications
+
+- Noisy time series  
+- Fault detection  
+- Real-time vehicular data (OBD-II)  
+- Energy consumption anomaly correction  
+
+### 📓 Notebook
+
+See the notebook [`TEDA_TEDARLS.ipynb`](./TEDA_TEDARLS.ipynb) for a complete demo including:
+- Data loading and preprocessing  
+- TEDA-RLS algorithm step by step  
+- Visualization of anomalies and corrections  
+- Metric reports for TEDA (classification) and RLS (regression)  
 
 ### Key References
 
