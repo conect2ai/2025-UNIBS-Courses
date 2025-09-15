@@ -1,6 +1,9 @@
-<!-- Foto da Equipe -->
 <p align="center">
-  <img src="./figures/team.png" alt="Team Photo" width="100%" style="margin-top: 20px;"/>
+  <img src="./figures/logos.png" alt="UFRN" height="100%"/>
+</p>
+
+<p align="center">
+  <img src="./figures/team.png" alt="Team Photo" width="100%" style="margin-top: 0px;"/>
 </p>
 
 ---

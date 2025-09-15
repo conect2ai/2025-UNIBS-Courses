@@ -12,8 +12,6 @@ An introduction to **Retrieval-Augmented Generation (RAG)**, showing how to buil
 
 ## 🚀 Run on Google Colab (Step-by-Step)
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/conect2ai/2025-UNIBS-Courses/blob/main/course_rag/code/RAG_LLMs_Base_UNIBS.ipynb)
-
 ### Open the notebook
 - In Colab, go to **File → Open notebook → GitHub** and paste the repo URL, or  
 - **Upload** `code/RAG_LLM_Basics_UNIBS.ipynb` directly to Colab.
