@@ -13,6 +13,7 @@
 
 The project is organized as follows:
 
-- **`01_HandsOn.ipynb`**: Contains the Jupyter notebook [`01_HandsOn.ipynb`](./01_HandsOn.ipynb) with introductory concepts.
-- **`02_HandsOn.ipynb`**: Contains the Jupyter notebook [`02_HandsOn.ipynb`](./02_HandsOn.ipynb) with the use of the tariff flag.
+- **`01_HandsOn.ipynb`**: Contains the Jupyter notebook [`01_HandsOn.ipynb`](./code/01_HandsOn.ipynb) with introductory concepts.
+- **`02_HandsOn.ipynb`**: Contains the Jupyter notebook [`02_HandsOn.ipynb`](./code/02_HandsOn.ipynb) with the use of the tariff flag.
 - **`agents_bootcamp.pdf`**: Contains [`agents_bootcamp.pdf`](./agents_bootcamp.pdf) used in the theoretical presentation.
+
